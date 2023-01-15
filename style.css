@@ -378,7 +378,7 @@ nav ul {
   /* =============== Responsive: Main Part ============= */
   /* Responsive: Quick feature section */
   .quick-features {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
