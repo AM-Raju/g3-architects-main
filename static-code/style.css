@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #ff900e;
+}
+
+/* Predefined Styles */
+.btn-primary {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px 25px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  line-height: 23px;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+  margin-bottom: 24px;
+}
+
+p {
+  color: #727272;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* =============== Header Part ============= */
+
+header {
+  width: 1920px;
+  padding-top: 50px;
+  background: rgba(255, 144, 14, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ----------------- Logo and Navigation Section ----------------- */
+.logo-nav {
+  width: 1452px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+nav ul {
+  width: 477px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------ Header text and banner section ------------------- */
+.text-banner {
+  text-align: center;
+}
+.text-banner h2 {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 75px;
+  margin-bottom: 45px;
+}
+
+.text-banner p {
+  margin-bottom: 32px;
+}
+
+.banner-img {
+  margin: 50px 0 45px;
+  border-radius: 5px;
+}
+
+/* ================ Main part ================ */
+/* -------------- Quick Features List Section -------------- */
+.quick-features {
+  width: 1318px;
+  margin: 85px auto 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Quick feature image */
+.feature-images {
+  width: 708px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+/* Quick feature text box */
+.feature-text {
+  width: 537px;
+}
+
+.feature-text h2 {
+  font-weight: 500;
+  color: #727272;
+}
+.feature-text button {
+  margin-top: 36px;
+}
+
+/* ----------------- Lovely Feature Section --------------------- */
+
+.lovely-features {
+  width: 1440px;
+  margin: 0 auto 207px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features {
+  width: 586px;
+}
+.feature-heading {
+  display: flex;
+  margin-bottom: 25px;
+}
+.bar {
+  width: 5px;
+  height: 106px;
+  background-color: var(--primary-color);
+}
+.feature-heading h2 {
+  padding-left: 22px;
+}
+
+.features-intro {
+  margin-bottom: 30px;
+}
+/* All lovely features */
+.feature {
+  width: 586px;
+  padding: 30px 42px 30px 30px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* Architect Image */
+.architect-img-box {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.architect-img {
+  width: 708px;
+  align-self: flex-end;
+}
+
+.big-button {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  padding: 47px 42px;
+  /* box-sizing: border-box; */
+  width: 342px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  position: absolute;
+  bottom: -77px;
+}
+
+/* ------------------- Facts Section -------------------- */
+.facts {
+  width: 1440px;
+  margin: 0 auto 130px;
+}
+
+.facts-intro {
+  margin-bottom: 100px;
+}
+
+/* Fact Container */
+
+.fact-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fact-box {
+  width: 242px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 45px 0 60px;
+  border-radius: 8px;
+}
+
+.fact-count {
+  color: #424242;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 53px;
+  margin: 10px 0;
+}
+
+.fact-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Fact box hover and transition effect */
+.fact-box:hover .fact-count {
+  transition: color 2s;
+  color: var(--primary-color);
+}
+.fact-box:hover .fact-name {
+  transition: color 2s;
+  color: var(--primary-color);
+}
+
+.fact-box:hover {
+  transition: border 3s;
+  border: 1px solid #000;
+}
+
+/* -------------------- Team Section ------------------ */
+
+.team {
+  width: 1200px;
+  margin: 0 auto 130px;
+}
+
+.team h2 {
+  text-align: center;
+}
+.team-members {
+  display: flex;
+  justify-content: space-around;
+}
+
+.member {
+  width: 260px;
+}
+.member img {
+  padding: 5px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.member h3 {
+  text-align: center;
+  font-size: 24px;
+}
+.member p {
+  text-align: center;
+}
+
+/* ----------------- Sponsor Section ------------------- */
+.sponsors {
+  width: 1440px;
+  margin: 0 auto 130px;
+  text-align: center;
+}
+.sponsors p {
+  margin-bottom: 50px;
+}
+.sponsor-brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sponsor-brands img {
+  filter: grayscale(100%);
+}
+
+.sponsor-brands img:hover {
+  filter: none;
+}
+
+/* ============== Footer Part ================ */
+footer {
+  width: 1440px;
+  text-align: center;
+  padding: 39px 38px;
+  background-color: #fff4e7;
+  margin: 0 auto 216px;
+  color: #424242;
+  font-size: 20px;
+}
