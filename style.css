@@ -1,3 +1,13 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +17,7 @@
 
 :root {
   --primary-color: #ff900e;
+  --gray: #727272;
 }
 
 /* Predefined Styles */
@@ -29,39 +40,50 @@
 }
 
 p {
-  color: #727272;
+  color: var(--gray);
   font-weight: 400;
   line-height: 26px;
+}
+
+.container {
+  max-width: 1452px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
 }
 
 /* =============== Header Part ============= */
 
 header {
-  width: 1920px;
+  width: 100vw;
   padding-top: 50px;
   background: rgba(255, 144, 14, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 /* ----------------- Logo and Navigation Section ----------------- */
 .logo-nav {
-  width: 1452px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 100px;
 }
 
 nav ul {
-  width: 477px;
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
 }
 
 /* ------------------ Header text and banner section ------------------- */
 .text-banner {
   text-align: center;
 }
+
 .text-banner h2 {
   font-size: 68px;
   font-weight: 700;
@@ -76,17 +98,20 @@ nav ul {
 .banner-img {
   margin: 50px 0 45px;
   border-radius: 5px;
+  width: calc(100% - 20px);
 }
 
 /* ================ Main part ================ */
 /* -------------- Quick Features List Section -------------- */
 .quick-features {
-  width: 1318px;
+  max-width: 1318px;
+  width: 100%;
   margin: 85px auto 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 /* Quick feature image */
 .feature-images {
   width: 708px;
@@ -95,6 +120,7 @@ nav ul {
   grid-template-rows: 1fr 1fr;
   gap: 24px;
 }
+
 /* Quick feature text box */
 .feature-text {
   width: 537px;
@@ -102,8 +128,9 @@ nav ul {
 
 .feature-text h2 {
   font-weight: 500;
-  color: #727272;
+  color: var(--gray);
 }
+
 .feature-text button {
   margin-top: 36px;
 }
@@ -111,8 +138,7 @@ nav ul {
 /* ----------------- Lovely Feature Section --------------------- */
 
 .lovely-features {
-  width: 1440px;
-  margin: 0 auto 207px;
+  margin-bottom: 207px;
   display: flex;
   justify-content: space-between;
 }
@@ -120,15 +146,18 @@ nav ul {
 .features {
   width: 586px;
 }
+
 .feature-heading {
   display: flex;
   margin-bottom: 25px;
 }
+
 .bar {
   width: 5px;
   height: 106px;
   background-color: var(--primary-color);
 }
+
 .feature-heading h2 {
   padding-left: 22px;
 }
@@ -136,6 +165,7 @@ nav ul {
 .features-intro {
   margin-bottom: 30px;
 }
+
 /* All lovely features */
 .feature {
   width: 586px;
@@ -184,8 +214,7 @@ nav ul {
 
 /* ------------------- Facts Section -------------------- */
 .facts {
-  width: 1440px;
-  margin: 0 auto 130px;
+  margin-bottom: 130px;
 }
 
 .facts-intro {
@@ -222,11 +251,13 @@ nav ul {
   font-size: 20px;
   font-weight: 600;
 }
+
 /* Fact box hover and transition effect */
 .fact-box:hover .fact-count {
   transition: color 2s;
   color: var(--primary-color);
 }
+
 .fact-box:hover .fact-name {
   transition: color 2s;
   color: var(--primary-color);
@@ -240,13 +271,15 @@ nav ul {
 /* -------------------- Team Section ------------------ */
 
 .team {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto 130px;
 }
 
 .team h2 {
   text-align: center;
 }
+
 .team-members {
   display: flex;
   justify-content: space-around;
@@ -255,34 +288,39 @@ nav ul {
 .member {
   width: 260px;
 }
+
 .member img {
   padding: 5px;
   background-color: var(--primary-color);
   border-radius: 50%;
   margin-bottom: 15px;
 }
+
 .member h3 {
   text-align: center;
   font-size: 24px;
 }
+
 .member p {
   text-align: center;
 }
 
 /* ----------------- Sponsor Section ------------------- */
 .sponsors {
-  width: 1440px;
-  margin: 0 auto 130px;
+  margin-bottom: 130px;
   text-align: center;
 }
+
 .sponsors p {
   margin-bottom: 50px;
 }
+
 .sponsor-brands {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .sponsor-brands img {
   filter: grayscale(100%);
 }
@@ -292,12 +330,133 @@ nav ul {
 }
 
 /* ============== Footer Part ================ */
-footer {
-  width: 1440px;
+.footer {
   text-align: center;
   padding: 39px 38px;
   background-color: #fff4e7;
-  margin: 0 auto 216px;
+  margin-bottom: 216px;
   color: #424242;
   font-size: 20px;
+}
+
+/* ========================================
+              Responsive Part              
+=========================================== */
+
+@media only screen and (max-width: 576px) {
+  /* Predefined Styles */
+  .btn-primary {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+  /* =============== Responsive: Header Part ============= */
+  .logo-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .text-banner h2 {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .text-banner p {
+    padding: 0 15px;
+  }
+
+  /* =============== Responsive: Main Part ============= */
+  /* Responsive: Quick feature section */
+  .quick-features {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .feature-text {
+    width: 85vw;
+  }
+
+  .feature-heading h2 {
+    font-size: 32px;
+  }
+
+  .feature-images {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  /* Responsive: Lovely feature section */
+  .lovely-features {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .features {
+    width: 85vw;
+  }
+
+  .feature {
+    width: 90vw;
+  }
+
+  .architect-img-box {
+    width: 85vw;
+  }
+
+  .architect-img {
+    width: 90vw;
+  }
+
+  .big-button {
+    font-size: 35px;
+    padding: 25px 0;
+    width: 45vw;
+  }
+
+  /* Responsive: Fact Section */
+  .facts {
+    padding: 0 20px;
+  }
+
+  .fact-container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Responsive: Team Section */
+
+  .team-members {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  /* Responsive: Sponsor Section */
+  .sponsor-brands {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* =============== Responsive: Footer Part ===================== */
+  .footer {
+    width: 80vw;
+  }
+  /* Media ends */
 }

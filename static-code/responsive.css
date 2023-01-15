@@ -1,0 +1,116 @@
+/* ========================================
+              Responsive Part              
+=========================================== */
+
+@media only screen and (max-width: 576px) {
+  /* Predefined Styles */
+  .btn-primary {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+  /* =============== Responsive: Header Part ============= */
+  .logo-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .text-banner h2 {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .text-banner p {
+    padding: 0 15px;
+  }
+  /* =============== Responsive: Main Part ============= */
+  /* Responsive: Quick feature section */
+  .quick-features {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .feature-text {
+    width: 85vw;
+  }
+  .feature-heading h2 {
+    font-size: 32px;
+  }
+  .feature-images {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  /* Responsive: Lovely feature section */
+  .lovely-features {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .features {
+    width: 85vw;
+  }
+
+  .feature {
+    width: 90vw;
+  }
+
+  .architect-img-box {
+    width: 85vw;
+  }
+
+  .architect-img {
+    width: 90vw;
+  }
+
+  .big-button {
+    font-size: 35px;
+    padding: 25px 0;
+    width: 45vw;
+  }
+  /* Responsive: Fact Section */
+  .facts {
+    padding: 0 20px;
+  }
+
+  .fact-container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Responsive: Team Section */
+
+  .team-members {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  /* Responsive: Sponsor Section */
+  .sponsor-brands {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* =============== Responsive: Footer Part ===================== */
+  .footer {
+    width: 80vw;
+  }
+  /* Media ends */
+}
